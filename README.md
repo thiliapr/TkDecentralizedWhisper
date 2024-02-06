@@ -7,7 +7,7 @@ Languages: [English](./README.md) | [简体中文 中国大陆](./README.zh-cn.m
 
 TkDecentralizedWhisper is a free and open-source software project licensed under **AGPLv3 or higher**.
 
-## Features:
+## Features
 - [ ] Main functionalities
     - [ ] Detect TkDecentralizedWhisper servers
     - [ ] Distribute resources
@@ -16,18 +16,18 @@ TkDecentralizedWhisper is a free and open-source software project licensed under
 
 All core functionalities are currently under development.
 
-## Installation:
+## Installation
 1. Clone the repository:
     ```shell
     git clone https://github.com/thiliapr/TkDecentralizedWhisper.git
     cd TkDecentralizedWhisper/
     ```
-2. Install dependencies:
+2. Install dependencies
     ```shell
-    py -3 -m pip install requirements.txt
+    py -3 -m pip install -r requirements.txt
     ```
 
-## Usage:
+## Usage
 Run the following command:
 ```shell
 py -3 tkdw.py
@@ -38,6 +38,6 @@ Feel free to explore the project further and contribute to its development!
 
 ## Donations
 ### Litecoin
-![ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jq](./repo/ltc_donation.png)
+[![Litecoin Payment QR Code](./repo/ltc_donation.png)](litecoin:LTC1QTWDLA3JMW3SWMHSX0H9HQPFN45PTJA5VSX3JQL?label=Support%20thiliapr)
 
 If you'd like to support this project, consider donating to the Litecoin wallet with the following address: `ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql`

@@ -7,7 +7,7 @@
 
 TkDecentralizedWhisper 是一个免费且开源的软件项目，根据 **AGPLv3 或更高版本** 许可。
 
-## 特点：
+## 特点
 - [ ] 主要功能
     - [ ] 检测 TkDecentralizedWhisper 服务器
     - [ ] 分发资源
@@ -16,7 +16,7 @@ TkDecentralizedWhisper 是一个免费且开源的软件项目，根据 **AGPLv3
 
 所有核心功能目前都在开发中。
 
-## 安装：
+## 安装
 1. 克隆存储库：
     ```shell
     git clone https://github.com/thiliapr/TkDecentralizedWhisper.git
@@ -24,10 +24,10 @@ TkDecentralizedWhisper 是一个免费且开源的软件项目，根据 **AGPLv3
     ```
 2. 安装依赖项：
     ```shell
-    py -3 -m pip install requirements.txt
+    py -3 -m pip install -r requirements.txt
     ```
 
-## 使用：
+## 使用
 运行以下命令：
 ```shell
 py -3 tkdw.py
@@ -36,9 +36,9 @@ py -3 tkdw.py
 ## 为项目做贡献
 请随意探索该项目并为其发展做出贡献！
 
-## 捐赠：
+## 捐赠
 ### Litecoin
-![ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql](./repo/ltc_donation.png)
+[![Litecoin支付的二维码](./repo/ltc_donation.png)](litecoin:LTC1QTWDLA3JMW3SWMHSX0H9HQPFN45PTJA5VSX3JQL?label=Support%20thiliapr)
 
 如果您想支持这个项目，请考虑通过以下地址向 Litecoin 钱包捐赠：`ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql`
 

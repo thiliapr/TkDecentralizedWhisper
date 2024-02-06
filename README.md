@@ -33,8 +33,11 @@ Run the following command:
 py -3 tkdw.py
 ```
 
-## Donations:
-If you'd like to support this project, consider donating to the Litecoin wallet with the following address: `ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql`
-
+## Contribute to the project
 Feel free to explore the project further and contribute to its development! 
 
+## Donations
+### Litecoin
+![ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jq](./repo/ltc_donation.png)
+
+If you'd like to support this project, consider donating to the Litecoin wallet with the following address: `ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql`

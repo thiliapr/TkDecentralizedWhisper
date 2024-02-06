@@ -33,7 +33,12 @@ TkDecentralizedWhisper 是一个免费且开源的软件项目，根据 **AGPLv3
 py -3 tkdw.py
 ```
 
+## 为项目做贡献
+请随意探索该项目并为其发展做出贡献！
+
 ## 捐赠：
+### Litecoin
+![ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql](./repo/ltc_donation.png)
+
 如果您想支持这个项目，请考虑通过以下地址向 Litecoin 钱包捐赠：`ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql`
 
-请随意探索该项目并为其发展做出贡献！

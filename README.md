@@ -38,6 +38,6 @@ Feel free to explore the project further and contribute to its development!
 
 ## Donations
 ### Litecoin
-[![Litecoin Payment QR Code](repo/ltc_donation.png)](litecoin:LTC1QTWDLA3JMW3SWMHSX0H9HQPFN45PTJA5VSX3JQL?label=Support%20thiliapr)
+![Litecoin Payment QR Code](repo/ltc_donation.png)
 
 If you'd like to support this project, consider donating to the Litecoin wallet with the following address: `ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql`

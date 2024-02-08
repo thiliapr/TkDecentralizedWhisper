@@ -38,7 +38,7 @@ py -3 tkdw.py
 
 ## 捐赠
 ### Litecoin
-[![Litecoin支付的二维码](ltc_donation.png)](litecoin:LTC1QTWDLA3JMW3SWMHSX0H9HQPFN45PTJA5VSX3JQL?label=Support%20thiliapr)
+![Litecoin支付的二维码](ltc_donation.png)
 
 如果您想支持这个项目，请考虑通过以下地址向 Litecoin 钱包捐赠：`ltc1qtwdla3jmw3swmhsx0h9hqpfn45ptja5vsx3jql`
 

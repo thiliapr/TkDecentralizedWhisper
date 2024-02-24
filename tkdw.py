@@ -11,7 +11,8 @@ def main():
         description="TkDecentralizedWhisper. Licensed by AGPLv3 or higher.",
         epilog="Visit https://github.com/thiliapr/TkDecentralizedWhisper to get more information."
     )
-    parser.add_argument("-c", "--config", dest="cfg_file", default="config.json", type=str, help="Configuration file.")
+    parser.add_argument("-c", "--config", dest="cfg_file",
+                        default="config.json", type=str, help="Configuration file.")
     parser.add_argument("--initialize", dest="initialize", action="store_true", default=False,
                         help="Initialize the configuration file.")
     args = parser.parse_args()
@@ -28,7 +29,7 @@ def main():
     if (not os.path.exists(args.cfg_file)) or (not os.path.isfile(args.cfg_file)):
         print("Configuration file `{}` not found. Please run `tkdw --initialize` to initialize the configuration file.")
     with open(args.cfg_file, mode="r", encoding="utf-8") as f:
-        config = json.load(f)
+        config: dict = json.load(f)
 
 
 if __name__ == "__main__":

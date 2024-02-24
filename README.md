@@ -3,7 +3,7 @@
 [![GitHub License](https://img.shields.io/badge/license-AGPLv3%2B-blue)](https://github.com/thiliapr/tkfreechat/blob/master/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/thiliapr/TkDecentralizedWhisper)](https://github.com/thiliapr/TkDecentralizedWhisper/stargazers)
 
-Languages: [English](./README.md) | [简体中文 中国大陆](repo/README.zh-cn.md)
+Languages: [English](./README.md) | [简体中文](repo/README.zh-hans.md)
 
 TkDecentralizedWhisper is a free and open-source software project licensed under **AGPLv3 or higher**.
 
@@ -12,7 +12,7 @@ TkDecentralizedWhisper is a free and open-source software project licensed under
     - [ ] Detect TkDecentralizedWhisper servers
     - [ ] Distribute resources
     - [ ] Resource handling mechanism (garbage collection)
-        - [ ] Heat rating
+        - [ ] Popularity rating
 
 All core functionalities are currently under development.
 
@@ -34,7 +34,11 @@ py -3 tkdw.py
 ```
 
 ## Contribute to the project
-Feel free to explore the project further and contribute to its development! 
+If you think there is anything that can be improved in the project, you can raise an issue to express your questions or suggestions; or you can simply be self-sufficient and correct the code yourself, then raise an issue and paste your modified code!
+
+Please refer to [Development Ideas](repo/development_ideas.md) to understand the development ideas and code of the project!
+
+Feel free to explore the project further and contribute to its development! For example, raise some issues or something.
 
 ## Donations
 ### Litecoin

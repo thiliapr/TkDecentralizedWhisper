@@ -2,12 +2,15 @@ import secrets
 from typing import Any
 
 key_chars = "abcdefghijklmnopqrstuvwxyz_"
-max_random_int = 65536
+default_max_random_int = 65536
 u_split_str_num = 4
 u_random_list_value_num = 4
 
 
-def generate_random_value(word_dict: dict[int, str], max_random_int: int = max_random_int, type_exclude: list = [], value_in_list: bool = False) -> int | str | bool | list[Any]:
+def generate_random_value(word_dict: dict[int, list[str]], max_random_int: int = default_max_random_int,
+                          type_exclude=None, value_in_list: bool = False) -> int | str | bool | list[Any]:
+    if type_exclude is None:
+        type_exclude = []
     word_lengths: list[int] = list(word_dict.keys())
 
     v_type = secrets.choice([t for t in [int, str, bool, list] if (t not in type_exclude)])
@@ -19,17 +22,19 @@ def generate_random_value(word_dict: dict[int, str], max_random_int: int = max_r
         value = secrets.choice([True, False])
     else:
         if not value_in_list:
-            value = [generate_random_value(word_dict, max_random_int=max_random_int, value_in_list=True) for _ in range(u_random_list_value_num + secrets.randbelow(3) - 2)]
+            value = [generate_random_value(word_dict, max_random_int=max_random_int, value_in_list=True)
+                     for _ in range(u_random_list_value_num + secrets.randbelow(3) - 2)]
         else:
             value = []
 
     return value
 
 
-def wler_confuse(src: dict[str, Any], word_list: list[str]) -> dict[str, Any]:
+def WLER_confuse(src: dict[str, Any], word_list: list[str]) -> dict[str, Any]:
     # Convert word list to dict
     word_lengths = {len(word) for word in word_list}
-    word_dict: dict[int, list[str]] = {length: [word for word in word_list if len(word) == length] for length in word_lengths}
+    word_dict: dict[int, list[str]] = {length: [word for word in word_list if len(word) == length] for length in
+                                       word_lengths}
 
     # Replace keys
     result = {secrets.choice(word_dict.get(
@@ -58,7 +63,8 @@ def wler_confuse(src: dict[str, Any], word_list: list[str]) -> dict[str, Any]:
                 char_num = str_char_num_avg + secrets.randbelow(6) - 2
 
                 if secrets.randbelow(2):
-                    result[k].append(generate_random_value(word_dict, max_random_int=max_random_int, type_exclude=[str]))
+                    result[k].append(
+                        generate_random_value(word_dict, max_random_int=default_max_random_int, type_exclude=[str]))
 
                 result[k].append(s[:char_num])
                 s = s[char_num:]
@@ -69,7 +75,7 @@ def wler_confuse(src: dict[str, Any], word_list: list[str]) -> dict[str, Any]:
     return result
 
 
-def wler_deobfuscate(src: dict[str, Any], original_keys: list[str]) -> dict:
+def WLER_deobfuscate(src: dict[str, Any], original_keys: list[str]) -> dict:
     # Define result
     original_key_lengths = [len(k) for k in original_keys]
     result = {original_keys[original_key_lengths.index(len(k))]: src[k] for k in src if len(k) in original_key_lengths}
